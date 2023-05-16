@@ -5,7 +5,7 @@ create table zakaznik (
  telefon varchar(20) not null,
  email varchar(40) not null unique,
  fakturacni_adresa int not null,
- dorucovaci_adresa int not null,
+ dorucovaci_adresa int,
  foreign key (fakturacni_adresa) references adresa(id),
  foreign key (dorucovaci_adresa) references adresa(id)
 );
